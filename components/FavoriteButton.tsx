@@ -40,7 +40,7 @@ const FavoritesButton: React.FC<FavoritesButtonProps> = ({movieId}) => {
       onClick={toggleFavorites}
       className="cursor-pointer group/item w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex items-center justify-center transition hover:border-neutral-300"
     >
-      <Icon />
+      <Icon className="text-white" size={24} />
     </div>
   );
 };

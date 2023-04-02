@@ -1,7 +1,9 @@
+import useInfoModal from "@/hooks/useInfoModal";
 import {useRouter} from "next/router";
 import React from "react";
 import {BsFillPlayFill} from "react-icons/bs";
 import FavoritesButton from "./FavoriteButton";
+import {BiChevronDown} from "react-icons/bi";
 
 interface MovieCardProps {
   data: Record<string, any>;
@@ -9,6 +11,7 @@ interface MovieCardProps {
 
 const MovieCard: React.FC<MovieCardProps> = ({data}) => {
   const router = useRouter();
+  const {openModal} = useInfoModal();
   return (
     <div className="group bg-zinc-800 col-span relative h-[12vh] lg:h-[20vh]">
       <img
@@ -31,15 +34,19 @@ const MovieCard: React.FC<MovieCardProps> = ({data}) => {
               <BsFillPlayFill size={15} color="black" />
             </div>
             <FavoritesButton movieId={data?.id} />
+            <div
+              onClick={() => openModal(data?.id)}
+              className="cursor-pointer ml-auto group/item w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex justify-center items-center transition hover:border-neutral-300"
+            >
+              <BiChevronDown className="text-white group-hover/item:text-neutral-300" />
+            </div>
           </div>
-          <p className="text-green-400 font-semibold mt-1">
+          <p className="text-green-400 font-semibold mt-2 text-sm">
             New <span className="text-white">2023</span>
           </p>
           <div className="flex flex-row gap-2 items-center">
-            <p className="text-white text-[10px] lg:text-sm">{data.duration}</p>
-          </div>
-          <div className="flex flex-row gap-2 items-center">
             <p className="text-white text-[10px] lg:text-sm">{data.genre}</p>
+            <p className="text-white text-[10px] lg:text-sm">{data.duration}</p>
           </div>
         </div>
       </div>
