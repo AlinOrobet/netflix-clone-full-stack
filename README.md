@@ -1,6 +1,8 @@
-# Netflix Clone - Full Stack  
+# Netflix Clone - Full Stack  -- Problems with Github and Google auth 
 
-[Demo Live]()
+On Deceptive site ahead -> Details -> Visit this unsafe site -> Create an account with the credentials for now
+
+[Demo Live](https://netflix-clone-full-stack.vercel.app/)
 
 # Table of contents
 - About project
