@@ -1,4 +1,4 @@
-# Netflix Clone - Full Stack  -- Problems with Github and Google auth 
+# Netflix Clone - Full Stack 
 
 On Deceptive site ahead -> Details -> Visit this unsafe site -> Create an account with the credentials for now
 
@@ -11,7 +11,7 @@ On Deceptive site ahead -> Details -> Visit this unsafe site -> Create an accoun
 
 # About project
 
-The main objective of my project was to learn Typescript and how to work with the back-end in Next.js. To achieve this, I attempted to replicate the Twitter website. In this project, I allowed anyone to create a user account, create a post, follow other people, comment on other users posts, and like other users posts.
+The main objective of my project was to learn Typescript and how to work with the back-end in Next.js. To achieve this, I attempted to replicate the Netflix website.
 
 # Features
 Among the main features are:
