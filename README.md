@@ -2,7 +2,7 @@
 
 On Deceptive site ahead -> Details -> Visit this unsafe site -> Create an account with the credentials for now
 
-[Demo Live](https://netflix-clone-full-stack.vercel.app/)
+[Demo Live](https://films-clone-full-stack-knou.vercel.app/auth)
 
 # Table of contents
 - About project
